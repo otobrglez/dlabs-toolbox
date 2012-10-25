@@ -33,29 +33,29 @@ Example session with fish:
       -h, --help      Show this message.
     fish:
     fish: duck find_tickets #1347
-    <project_1>/#1347 Sprememba tel.št.
-    <project_2>/#1347 kategorije v računalništvu je potrebno popraviti
+    <project_1>/#1347 Lorem ....
+    <project_2>/#1347 .. ... ....
     fish: duck find_tickets #1000
-    <project_5>/#1000 Nepravilna cena project_5
-    <project_1>/#1000 Nadgradnja akcijske ponudbe izdelkov in storitev
-    <project_2>/#1000 Avtera XML: Popraviti nekatera polja pri oddaji XMLja na Avtero
+    <project_5>/#1000 .. ... ... project_5
+    <project_1>/#1000 ... ... .....
+    <project_2>/#1000 .... ...
     fish:
     fish: duck find_tickets <project_5> #1000
-    petrol/#1000 Nepravilna cena goriva na Petrol.hr
+    <project_5>/#1000 .. ... ... project_5
     fish: exit
 
 Piping results to fish:
 
     $ echo "duck find_tickets project_5 #1000" | ./bin/fish | grep -i "project_5\/"
-    project_5/#1000 Nepravilna cena project_5
+    <project_5>/#1000 .. ... ... project_5
 
 ## Using **duck** tool
 
-* Listing tasks
+Listing tasks
 
 		duck task "#350"
 
-* Listing activities
+Listing activities
 
 		duck activities
 		duck activities --user oto.brglez@dlabs.si
