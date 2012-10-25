@@ -18,6 +18,11 @@ This GEM provides tools for D.Labs developer.
 
 * *Or set 2 enviroment variables with same content.*
 
+## Tools
+
+* duck - Simple console application for reporting and time tracking.
+* fish - Interactive tool for dynamic work.
+
 ## Using **fish** tool
 
 **fish** is interactive REPL console that enables you to work dynamicaly with other dlabs-toolbox tools.
@@ -53,19 +58,15 @@ Piping results to fish:
 
 Listing tasks
 
-		duck task "#350"
+    duck task "#350"
 
 Listing activities
 
-		duck activities
-		duck activities --user oto.brglez@dlabs.si
-		duck activities --project "Name of the project"
-		duck activities --between 2012-01-01 2012-12-31
-		duck activities --user oto.brglez@dlabs.si --between 2012-01-01 2012-12-31
-
-## Tools
-
-* duck - Simple console application for reporting and time tracking.
+    duck activities
+    duck activities --user oto.brglez@dlabs.si
+    duck activities --project "Name of the project"
+    duck activities --between 2012-01-01 2012-12-31
+    duck activities --user oto.brglez@dlabs.si --between 2012-01-01 2012-12-31
 
 ## Contributing to dlabs-toolbox
 
