@@ -1,3 +1,6 @@
+# Ignore credentials
+.dlabs*
+
 # rcov generated
 coverage
 coverage.data

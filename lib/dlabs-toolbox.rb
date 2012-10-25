@@ -1,3 +1,4 @@
+require "bundler/setup"
 require "oj"
 require "mechanize"
 require "json"
@@ -42,9 +43,9 @@ class Duck
   end
 end
 
-d = Duck.new "oto.brglez@dlabs.si", "xxxxxxx"
+d = Duck.new ENV["DLABS_EMAIL"], ENV["DLABS_PASS"]
 
-res = d.tickets_find(:params => [ARGV[0]])
+res = d.tickets_find :params => [ARGV[0]]
 
 puts res.map { |t| "#{t["id"].to_s.red}\t#{t["rel_project"]}\t\t#{t["summary"][0..20]}" }
 
