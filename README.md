@@ -1,12 +1,14 @@
-= D.Labs Toolbox
+![D.Labs Toolbox Travis Status](https://secure.travis-ci.org/otobrglez/dlabs-toolbox.png?branch=master)
+
+# D.Labs Toolbox
 
 This GEM provides tools for D.Labs developer.
 
-== Tools
+## Tools
 
 * duck - Simple console application for reporting and time tracking.
 
-== Contributing to dlabs-toolbox
+## Contributing to dlabs-toolbox
  
 * Clone
 * Make branch
