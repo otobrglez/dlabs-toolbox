@@ -18,10 +18,12 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/otobrglez/dlabs-toolbox"
   gem.license = "MIT"
   gem.summary = %Q{D.Labs}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{D.Labs GEM provides tools for D.Labs developers.}
   gem.email = "otobrglez@gmail.com"
   gem.authors = ["Oto Brglez"]
   # dependencies defined in Gemfile
+
+	gem.executables = %w(duck)
 end
 Jeweler::RubygemsDotOrgTasks.new
 
