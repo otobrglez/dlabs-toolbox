@@ -21,8 +21,11 @@ This GEM provides tools for D.Labs developer.
 ## Using **duck** tool
 
 * Listing tasks
+
 		duck task "#350"
+        
 * Listing activities
+
 		duck activities
 		duck activities --user oto.brglez@dlabs.si
 		duck activities --project "Name of the project"
