@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "optparse"
+require "pp"
+
+$:.unshift(File.join(File.dirname(__FILE__), "/../lib"))
+require "dlabs-toolbox"
+
+fish = Toolbox::Fish.new

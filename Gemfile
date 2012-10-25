@@ -3,6 +3,7 @@ source :rubygems
 gem 'oj'
 gem 'mechanize'
 gem 'colorize'
+gem 'pry'
 
 group :development do
   gem 'rspec'
