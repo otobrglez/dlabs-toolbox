@@ -7,11 +7,16 @@ This GEM provides tools for D.Labs developer.
 ## Installing
 
 * [Install Ruby](http://www.ruby-lang.org/en/downloads/)
-* # gem install dlabs-toolbox
+* Install dlabs-toolbox gem
+    
+    gem install dlabs-toolbox
+
 * Create **~/.dlabs-credentials** with content
+    
     DLABS_EMAIL="oto.brglez@dlabs.si"
     DLABS_PASS="..."
-* Or set 2 enviroment variables with same content.
+    
+* *Or set 2 enviroment variables with same content.*
 
 ## Using **duck** tool
 
