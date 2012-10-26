@@ -44,6 +44,15 @@ This GEM provides tools for D.Labs developer.
     duck a 2012-31-12				# My activities on day 2012-31-12
     duck a 2012-01-01 2012-31-12	# Activities between this two dates
 
+### Taking to developers (sending single quack)
+	duck q oto.brglez "Please call me, maybe."
+
+### Talking to developer (person 2 person chat)
+	duck q oto.brglez
+    
+### Talking to all developers (group chat)
+	duck q
+
 ### Interactive mode
 	duck -i
 
