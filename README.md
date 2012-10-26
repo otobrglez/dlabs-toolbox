@@ -52,10 +52,7 @@ This GEM provides tools for D.Labs developer.
     
 ### Talking to all developers (group chat)
 	duck q
-
-### Interactive mode
-	duck -i
-
+    
 ## Contributing to dlabs-toolbox
 
 * Clone
