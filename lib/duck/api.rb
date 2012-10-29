@@ -81,5 +81,14 @@ module Duck
     def activities_info params=[]
       call_with_post "activities.info", params
     end
+
+    def tickets_find params=[]
+      call_with_post "tickets.find", params
+    end
+
+    def calendar_months params=[]
+      call_with_post "calendar.months", params
+    end
+
   end
 end
