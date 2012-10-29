@@ -22,8 +22,37 @@ This GEM provides tools for D.Labs developer.
 
 * duck - Simple console application for reporting and time tracking.
 
-## Using 
+## Using **duck**
 
+### Finding task
+	duck "the project i'm looking for..."
+
+### Project details
+	duck my_project
+
+### Task details
+	duck my_project/1234
+    
+### Adding time to project
+	duck my_project/1234 +1h Working on this task of mine
+    duck my_project/3232 +1:30 Adding hour and 30 minutes
+    duck my_project/1223 +45m Working for 45
+
+### Listing activities
+    duck a							# My activities
+	duck a today					# My todays activities
+    duck a 2012-31-12				# My activities on day 2012-31-12
+    duck a 2012-01-01 2012-31-12	# Activities between this two dates
+
+### Taking to developers (sending single quack)
+	duck q oto.brglez "Please call me, maybe."
+
+### Talking to developer (person 2 person chat)
+	duck q oto.brglez
+    
+### Talking to all developers (group chat)
+	duck q
+    
 ## Contributing to dlabs-toolbox
 
 * Clone
