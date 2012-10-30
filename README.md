@@ -14,9 +14,9 @@ This GEM provides tools for D.Labs developer.
 * Create **~/.dlabs-credentials** with content (JSON)
 
 		{
-    "DLABS_EMAIL": "oto.brglez@dlabs.si",
-    "DLABS_PASS": "pass goes here"
-    }
+    	"DLABS_EMAIL": "oto.brglez@dlabs.si",
+    	"DLABS_PASS": "pass goes here"
+    	}
 
 * *Or set 2 enviroment variables with same content.*
 
