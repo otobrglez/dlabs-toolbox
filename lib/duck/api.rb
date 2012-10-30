@@ -19,6 +19,8 @@ module Duck
   end
 
   class API
+    class Error < StandardError; end
+
     include HTTParty
     base_uri 'https://duck.dlabs.si/api'
     # debug_output $stderr
@@ -74,21 +76,43 @@ module Duck
       })
 
       parsed = result.parsed_response
-      return parsed["result"] unless parsed["result"].nil?
-      parsed["error"]
+
+      raise Duck::API::Error.new parsed["error"]["message"] unless parsed["error"].nil?
+
+      parsed["result"]
     end
 
     def activities_info params=[]
       call_with_post "activities.info", params
     end
 
-    def tickets_find params=[]
-      call_with_post "tickets.find", params
-    end
-
     def calendar_months params=[]
       call_with_post "calendar.months", params
     end
 
+    def projects_fetch params=[]
+      call_with_post "projects.fetch", params
+    end
+
+    def projects_fetch_with_details params=[]
+      call_with_post "projects.fetchWithDetails", params
+    end
+
+    def teams_fetch params=[]
+      call_with_post "teams.fetch", params
+    end
+
+    def tickets_find params=[]
+      call_with_post "tickets.find", params
+    end
+
+    def workers_fetch params=[]
+      call_with_post "workers.fetch", params
+    end
+
+    def workers_get_monthly_vacation_summary params=[]
+      call_with_post "workers.getMonthlyVacationSummary", params
+    end
   end
+
 end
